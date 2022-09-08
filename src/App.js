@@ -91,40 +91,40 @@ const App = (props) => {
         <label>First Name: </label> 
         <input type="text" onChange={ handleFirstname } />
         {
-          firstnameError ?
-          <p style={{color:'red'}}>{firstnameError}</p> : ''
+          firstnameError &&
+          <p style={{color:'red'}}>{firstnameError}</p>
         }
       </div>
       <div>
         <label>Last Name: </label> 
         <input type="text" onChange={ handleLastname } />
         {
-          lastnameError ?
-          <p style={{color:'red'}}>{lastnameError}</p> : ''
+          lastnameError &&
+          <p style={{color:'red'}}>{lastnameError}</p>
         }
       </div>
       <div>
         <label>Email: </label> 
         <input type="text" onChange={ handleEmail } />
         {
-          emailError ?
-          <p style={{color:'red'}}>{emailError}</p> : ''
+          emailError &&
+          <p style={{color:'red'}}>{emailError}</p>
         }
       </div>
       <div>
         <label>Password: </label> 
         <input type="text" onChange={ handlePassword } />
         {
-          passwordError ?
-          <p style={{color:'red'}}>{passwordError}</p> : ''
+          passwordError &&
+          <p style={{color:'red'}}>{passwordError}</p>
         }
       </div>
       <div>
         <label>Confirm Password: </label> 
         <input type="text" onChange={ handleconfirmPW } />
         {
-          confirmPWError ?
-          <p style={{color:'red'}}>{confirmPWError}</p> : ''
+          confirmPWError &&
+          <p style={{color:'red'}}>{confirmPWError}</p>
         }
       </div>
         <input type="submit" value="Create User" />
